@@ -19,7 +19,7 @@ namespace TunicKeyboard
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
-            textBox1.Clear();
+            textBoxMain.Clear();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
