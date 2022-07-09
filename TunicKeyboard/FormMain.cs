@@ -21,5 +21,10 @@ namespace TunicKeyboard
         {
             textBox1.Clear();
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
