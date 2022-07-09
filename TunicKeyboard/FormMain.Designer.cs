@@ -82,7 +82,7 @@
             // 
             this.pictureBoxMain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxMain.BackColor = System.Drawing.Color.Wheat;
+            this.pictureBoxMain.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBoxMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxMain.InitialImage = null;
             this.pictureBoxMain.Location = new System.Drawing.Point(12, 12);
@@ -268,7 +268,7 @@
             // buttonDOT
             // 
             this.buttonDOT.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonDOT.Image = global::TunicKeyboard.Properties.Resources.DOT1;
+            this.buttonDOT.Image = global::TunicKeyboard.Properties.Resources.DOT;
             this.buttonDOT.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonDOT.Location = new System.Drawing.Point(288, 704);
             this.buttonDOT.Name = "buttonDOT";
