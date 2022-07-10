@@ -3,7 +3,7 @@
 public partial class FormMain : Form
 {
     private const int runeWidth = 61;
-    private const int spaceWidth = 30;
+    private const int spaceWidth = 40;
 
     private int currPos;
     private Bitmap doubleBuffer = new(1186, 162);
