@@ -1,250 +1,249 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿namespace TunicKeyboard;
 
-namespace TunicKeyboard
+public partial class FormMain : Form
 {
-    public partial class FormMain : Form
+    private Bitmap doubleBuffer = new(1049, 162);
+
+    public FormMain()
     {
-        public FormMain()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+        using Graphics g = Graphics.FromImage(doubleBuffer);
+        g.Clear(Color.White);
+    }
 
-        private void buttonClear_Click(object sender, EventArgs e)
-        {
-            textBoxMain.Clear();
-        }
+    private void buttonClear_Click(object sender, EventArgs e)
+    {
+        textBoxMain.Clear();
+        using Graphics g = Graphics.FromImage(doubleBuffer);
+        g.Clear(Color.White);
+        pictureBoxMain.Invalidate();
+    }
 
-        private void FormMain_Load(object sender, EventArgs e)
-        {
+    private void buttonA_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("A");
+        using Graphics g = Graphics.FromImage(doubleBuffer);
+        g.DrawImage(buttonA.Image, 0, 0);
+        pictureBoxMain.Invalidate();
+    }
 
-        }
+    private void buttonAR_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("AR");
+    }
 
-        private void buttonA_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("A");
-        }
+    private void buttonAH_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("AH");
+    }
 
-        private void buttonAR_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("AR");
-        }
+    private void buttonAY_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("AY");
+    }
 
-        private void buttonAH_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("AH");
-        }
+    private void buttonE_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("E");
+    }
 
-        private void buttonAY_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("AY");
-        }
+    private void buttonEE_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("EE");
+    }
 
-        private void buttonE_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("E");
-        }
+    private void buttonEER_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("EER");
+    }
 
-        private void buttonEE_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("EE");
-        }
+    private void buttonEH_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("EH");
+    }
 
-        private void buttonEER_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("EER");
-        }
+    private void buttonERE_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("ERE");
+    }
 
-        private void buttonEH_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("EH");
-        }
+    private void buttonI_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("I");
+    }
 
-        private void buttonERE_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("ERE");
-        }
+    private void buttonIE_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("IE");
+    }
 
-        private void buttonI_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("I");
-        }
+    private void buttonIR_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("IR");
+    }
 
-        private void buttonIE_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("IE");
-        }
+    private void buttonOH_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("OH");
+    }
 
-        private void buttonIR_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("IR");
-        }
+    private void buttonOI_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("OI");
+    }
 
-        private void buttonOH_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("OH");
-        }
+    private void buttonOO_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("OO");
+    }
 
-        private void buttonOI_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("OI");
-        }
+    private void buttonOU_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("OU");
+    }
 
-        private void buttonOO_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("OO");
-        }
+    private void buttonOW_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("OW");
+    }
 
-        private void buttonOU_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("OU");
-        }
+    private void buttonORE_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("ORE");
+    }
 
-        private void buttonOW_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("OW");
-        }
+    private void buttonDOT_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText(".");
+    }
 
-        private void buttonORE_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("ORE");
-        }
+    private void buttonSPACE_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText(" ");
+    }
 
-        private void buttonDOT_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText(".");
-        }
+    private void buttonB_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("B");
+    }
 
-        private void buttonSPACE_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText(" ");
-        }
+    private void buttonCH_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("CH");
+    }
 
-        private void buttonB_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("B");
-        }
+    private void buttonD_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("D");
+    }
 
-        private void buttonCH_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("CH");
-        }
+    private void buttonF_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("F");
+    }
 
-        private void buttonD_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("D");
-        }
+    private void buttonG_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("G");
+    }
 
-        private void buttonF_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("F");
-        }
+    private void buttonH_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("H");
+    }
 
-        private void buttonG_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("G");
-        }
+    private void buttonJ_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("J");
+    }
 
-        private void buttonH_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("H");
-        }
+    private void buttonK_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("K");
+    }
 
-        private void buttonJ_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("J");
-        }
+    private void buttonL_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("L");
+    }
 
-        private void buttonK_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("K");
-        }
+    private void buttonM_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("M");
+    }
 
-        private void buttonL_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("L");
-        }
+    private void buttonN_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("N");
+    }
 
-        private void buttonM_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("M");
-        }
+    private void buttonNG_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("NG");
+    }
 
-        private void buttonN_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("N");
-        }
+    private void buttonP_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("P");
+    }
 
-        private void buttonNG_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("NG");
-        }
+    private void buttonR_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("R");
+    }
 
-        private void buttonP_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("P");
-        }
+    private void buttonS_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("S");
+    }
 
-        private void buttonR_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("R");
-        }
+    private void buttonSH_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("SH");
+    }
 
-        private void buttonS_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("S");
-        }
+    private void buttonT_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("T");
+    }
 
-        private void buttonSH_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("SH");
-        }
+    private void buttonTH_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("TH");
+    }
 
-        private void buttonT_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("T");
-        }
+    private void buttonDTH_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("DTH");
+    }
 
-        private void buttonTH_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("TH");
-        }
+    private void buttonV_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("V");
+    }
 
-        private void buttonDTH_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("DTH");
-        }
+    private void buttonW_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("W");
+    }
 
-        private void buttonV_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("V");
-        }
+    private void buttonY_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("Y");
+    }
 
-        private void buttonW_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("W");
-        }
+    private void buttonZ_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("Z");
+    }
 
-        private void buttonY_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("Y");
-        }
+    private void buttonZH_Click(object sender, EventArgs e)
+    {
+        textBoxMain.AppendText("ZH");
+    }
 
-        private void buttonZ_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("Z");
-        }
-
-        private void buttonZH_Click(object sender, EventArgs e)
-        {
-            textBoxMain.AppendText("ZH");
-        }
+    private void pictureBoxMain_Paint(object sender, PaintEventArgs e)
+    {
+        e.Graphics.DrawImage(doubleBuffer, 0, 0);
     }
 }
