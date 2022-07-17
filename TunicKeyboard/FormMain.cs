@@ -308,23 +308,39 @@ public partial class FormMain : Form
 
     private void SetVowel(Button sender)
     {
-        if (vowelButton != null)
+        if (vowelButton == sender)
         {
             vowelButton.BackColor = SystemColors.Control;
+            vowelButton = null;
         }
-        vowelButton = sender;
-        vowelButton.BackColor = Color.LightGreen;
+        else
+        {
+            if (vowelButton != null)
+            {
+                vowelButton.BackColor = SystemColors.Control;
+            }
+            vowelButton = sender;
+            vowelButton.BackColor = Color.LightGreen;
+        }
         DrawPreview();
     }
 
     private void SetConsonant(Button sender)
     {
-        if (consonantButton != null)
+        if (consonantButton == sender)
         {
             consonantButton.BackColor = SystemColors.Control;
+            consonantButton = null;
         }
-        consonantButton = sender;
-        consonantButton.BackColor = Color.LightGreen;
+        else
+        {
+            if (consonantButton != null)
+            {
+                consonantButton.BackColor = SystemColors.Control;
+            }
+            consonantButton = sender;
+            consonantButton.BackColor = Color.LightGreen;
+        }
         DrawPreview();
     }
 
@@ -332,8 +348,8 @@ public partial class FormMain : Form
     {
         if (dotButton != null)
         {
+            dotButton.BackColor = SystemColors.Control;
             dotButton = null;
-            sender.BackColor = SystemColors.Control;
         }
         else
         {
