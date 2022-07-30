@@ -2,12 +2,12 @@
 
 public partial class FormMain : Form
 {
-    private const int runeWidth = 61;
-    private const int spaceWidth = 40;
+    private const int runeWidth = 29;
+    private const int spaceWidth = 20;
 
     private int currPos;
-    private Bitmap doubleBuffer;
-    private Bitmap previewBuffer;
+    private readonly Bitmap doubleBuffer;
+    private readonly Bitmap previewBuffer;
 
     private Button? vowelButton;
     private Button? consonantButton;
