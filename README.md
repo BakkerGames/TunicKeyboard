@@ -1,3 +1,3 @@
 # TunicKeyboard
 
-![image](https://user-images.githubusercontent.com/12262470/178636041-3a67579c-b403-438b-939a-184f796217f0.png)
+![Screenshot](https://user-images.githubusercontent.com/12262470/182285986-e984c013-7c77-466a-a84a-ceb880a2ff95.png)
