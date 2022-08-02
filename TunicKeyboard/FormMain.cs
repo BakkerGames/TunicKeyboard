@@ -6,6 +6,7 @@ public partial class FormMain : Form
     private const int spaceWidth = 20;
 
     private int currPos;
+    private bool lastWasSpace;
     private readonly Bitmap doubleBuffer;
     private readonly Bitmap previewBuffer;
 
@@ -25,6 +26,7 @@ public partial class FormMain : Form
         p.Clear(Color.Transparent);
         pictureBoxPreview.Invalidate();
         currPos = 0;
+        lastWasSpace = false;
     }
 
     private void buttonClear_Click(object sender, EventArgs e)
@@ -274,7 +276,7 @@ public partial class FormMain : Form
         e.Graphics.DrawImage(doubleBuffer, 0, 0);
     }
 
-    private void buttonNEXT_Click(object sender, EventArgs e)
+    private void buttonAPPLY_Click(object sender, EventArgs e)
     {
         using Graphics g = Graphics.FromImage(doubleBuffer);
         g.DrawImage(previewBuffer, currPos, 0);
@@ -298,12 +300,17 @@ public partial class FormMain : Form
         p.Clear(Color.Transparent);
         pictureBoxPreview.Invalidate();
         ClearButtons();
+        lastWasSpace = false;
     }
 
     private void buttonSPACE_Click(object sender, EventArgs e)
     {
-        textBoxMain.AppendText(" ");
-        currPos += spaceWidth;
+        if (!lastWasSpace)
+        {
+            textBoxMain.AppendText(" ");
+            currPos += spaceWidth;
+            lastWasSpace = true;
+        }
     }
 
     private void SetVowel(Button sender)

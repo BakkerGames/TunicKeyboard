@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.textBoxMain = new System.Windows.Forms.TextBox();
             this.buttonClear = new System.Windows.Forms.Button();
@@ -75,7 +76,7 @@
             this.buttonTH = new System.Windows.Forms.Button();
             this.buttonNG = new System.Windows.Forms.Button();
             this.buttonH = new System.Windows.Forms.Button();
-            this.buttonNEXT = new System.Windows.Forms.Button();
+            this.buttonAPPLY = new System.Windows.Forms.Button();
             this.pictureBoxPreview = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPreview)).BeginInit();
@@ -90,7 +91,7 @@
             this.pictureBoxMain.InitialImage = null;
             this.pictureBoxMain.Location = new System.Drawing.Point(12, 12);
             this.pictureBoxMain.Name = "pictureBoxMain";
-            this.pictureBoxMain.Size = new System.Drawing.Size(790, 162);
+            this.pictureBoxMain.Size = new System.Drawing.Size(790, 79);
             this.pictureBoxMain.TabIndex = 0;
             this.pictureBoxMain.TabStop = false;
             this.pictureBoxMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBoxMain_Paint);
@@ -99,19 +100,19 @@
             // 
             this.textBoxMain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxMain.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBoxMain.Location = new System.Drawing.Point(12, 180);
+            this.textBoxMain.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxMain.Location = new System.Drawing.Point(12, 97);
             this.textBoxMain.Name = "textBoxMain";
             this.textBoxMain.ReadOnly = true;
-            this.textBoxMain.Size = new System.Drawing.Size(709, 33);
+            this.textBoxMain.Size = new System.Drawing.Size(709, 29);
             this.textBoxMain.TabIndex = 0;
             // 
             // buttonClear
             // 
             this.buttonClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonClear.Location = new System.Drawing.Point(727, 180);
+            this.buttonClear.Location = new System.Drawing.Point(727, 95);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(75, 35);
+            this.buttonClear.Size = new System.Drawing.Size(75, 31);
             this.buttonClear.TabIndex = 1;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = true;
@@ -119,10 +120,11 @@
             // 
             // buttonA
             // 
+            this.buttonA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonA.BackColor = System.Drawing.SystemColors.Control;
             this.buttonA.Image = global::TunicKeyboard.Properties.Resources.A;
             this.buttonA.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonA.Location = new System.Drawing.Point(12, 221);
+            this.buttonA.Location = new System.Drawing.Point(12, 138);
             this.buttonA.Name = "buttonA";
             this.buttonA.Size = new System.Drawing.Size(55, 105);
             this.buttonA.TabIndex = 2;
@@ -133,10 +135,11 @@
             // 
             // buttonAR
             // 
+            this.buttonAR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonAR.BackColor = System.Drawing.SystemColors.Control;
             this.buttonAR.Image = global::TunicKeyboard.Properties.Resources.AR;
             this.buttonAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonAR.Location = new System.Drawing.Point(73, 221);
+            this.buttonAR.Location = new System.Drawing.Point(73, 138);
             this.buttonAR.Name = "buttonAR";
             this.buttonAR.Size = new System.Drawing.Size(55, 105);
             this.buttonAR.TabIndex = 3;
@@ -147,10 +150,11 @@
             // 
             // buttonAH
             // 
+            this.buttonAH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonAH.BackColor = System.Drawing.SystemColors.Control;
             this.buttonAH.Image = global::TunicKeyboard.Properties.Resources.AH;
             this.buttonAH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonAH.Location = new System.Drawing.Point(134, 221);
+            this.buttonAH.Location = new System.Drawing.Point(134, 138);
             this.buttonAH.Name = "buttonAH";
             this.buttonAH.Size = new System.Drawing.Size(55, 105);
             this.buttonAH.TabIndex = 4;
@@ -161,10 +165,11 @@
             // 
             // buttonAY
             // 
+            this.buttonAY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonAY.BackColor = System.Drawing.SystemColors.Control;
             this.buttonAY.Image = global::TunicKeyboard.Properties.Resources.AY;
             this.buttonAY.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonAY.Location = new System.Drawing.Point(195, 221);
+            this.buttonAY.Location = new System.Drawing.Point(195, 138);
             this.buttonAY.Name = "buttonAY";
             this.buttonAY.Size = new System.Drawing.Size(55, 105);
             this.buttonAY.TabIndex = 5;
@@ -175,10 +180,11 @@
             // 
             // buttonE
             // 
+            this.buttonE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonE.BackColor = System.Drawing.SystemColors.Control;
             this.buttonE.Image = global::TunicKeyboard.Properties.Resources.E;
             this.buttonE.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonE.Location = new System.Drawing.Point(256, 221);
+            this.buttonE.Location = new System.Drawing.Point(256, 138);
             this.buttonE.Name = "buttonE";
             this.buttonE.Size = new System.Drawing.Size(55, 105);
             this.buttonE.TabIndex = 6;
@@ -189,10 +195,11 @@
             // 
             // buttonI
             // 
+            this.buttonI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonI.BackColor = System.Drawing.SystemColors.Control;
             this.buttonI.Image = global::TunicKeyboard.Properties.Resources.I;
             this.buttonI.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonI.Location = new System.Drawing.Point(256, 332);
+            this.buttonI.Location = new System.Drawing.Point(256, 249);
             this.buttonI.Name = "buttonI";
             this.buttonI.Size = new System.Drawing.Size(55, 105);
             this.buttonI.TabIndex = 11;
@@ -203,10 +210,11 @@
             // 
             // buttonERE
             // 
+            this.buttonERE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonERE.BackColor = System.Drawing.SystemColors.Control;
             this.buttonERE.Image = global::TunicKeyboard.Properties.Resources.ERE;
             this.buttonERE.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonERE.Location = new System.Drawing.Point(195, 332);
+            this.buttonERE.Location = new System.Drawing.Point(195, 249);
             this.buttonERE.Name = "buttonERE";
             this.buttonERE.Size = new System.Drawing.Size(55, 105);
             this.buttonERE.TabIndex = 10;
@@ -217,10 +225,11 @@
             // 
             // buttonEH
             // 
+            this.buttonEH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonEH.BackColor = System.Drawing.SystemColors.Control;
             this.buttonEH.Image = global::TunicKeyboard.Properties.Resources.EH;
             this.buttonEH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonEH.Location = new System.Drawing.Point(134, 332);
+            this.buttonEH.Location = new System.Drawing.Point(134, 249);
             this.buttonEH.Name = "buttonEH";
             this.buttonEH.Size = new System.Drawing.Size(55, 105);
             this.buttonEH.TabIndex = 9;
@@ -231,10 +240,11 @@
             // 
             // buttonEER
             // 
+            this.buttonEER.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonEER.BackColor = System.Drawing.SystemColors.Control;
             this.buttonEER.Image = global::TunicKeyboard.Properties.Resources.EER;
             this.buttonEER.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonEER.Location = new System.Drawing.Point(73, 332);
+            this.buttonEER.Location = new System.Drawing.Point(73, 249);
             this.buttonEER.Name = "buttonEER";
             this.buttonEER.Size = new System.Drawing.Size(55, 105);
             this.buttonEER.TabIndex = 8;
@@ -245,10 +255,11 @@
             // 
             // buttonEE
             // 
+            this.buttonEE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonEE.BackColor = System.Drawing.SystemColors.Control;
             this.buttonEE.Image = global::TunicKeyboard.Properties.Resources.EE;
             this.buttonEE.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonEE.Location = new System.Drawing.Point(12, 332);
+            this.buttonEE.Location = new System.Drawing.Point(12, 249);
             this.buttonEE.Name = "buttonEE";
             this.buttonEE.Size = new System.Drawing.Size(55, 105);
             this.buttonEE.TabIndex = 7;
@@ -259,9 +270,10 @@
             // 
             // buttonSPACE
             // 
+            this.buttonSPACE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonSPACE.BackColor = System.Drawing.SystemColors.Control;
             this.buttonSPACE.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonSPACE.Location = new System.Drawing.Point(349, 554);
+            this.buttonSPACE.Location = new System.Drawing.Point(349, 471);
             this.buttonSPACE.Name = "buttonSPACE";
             this.buttonSPACE.Size = new System.Drawing.Size(55, 105);
             this.buttonSPACE.TabIndex = 21;
@@ -271,10 +283,11 @@
             // 
             // buttonDOT
             // 
+            this.buttonDOT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonDOT.BackColor = System.Drawing.SystemColors.Control;
             this.buttonDOT.Image = global::TunicKeyboard.Properties.Resources.DOT;
             this.buttonDOT.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonDOT.Location = new System.Drawing.Point(256, 554);
+            this.buttonDOT.Location = new System.Drawing.Point(256, 471);
             this.buttonDOT.Name = "buttonDOT";
             this.buttonDOT.Size = new System.Drawing.Size(55, 105);
             this.buttonDOT.TabIndex = 20;
@@ -285,10 +298,11 @@
             // 
             // buttonORE
             // 
+            this.buttonORE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonORE.BackColor = System.Drawing.SystemColors.Control;
             this.buttonORE.Image = global::TunicKeyboard.Properties.Resources.ORE;
             this.buttonORE.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonORE.Location = new System.Drawing.Point(134, 554);
+            this.buttonORE.Location = new System.Drawing.Point(134, 471);
             this.buttonORE.Name = "buttonORE";
             this.buttonORE.Size = new System.Drawing.Size(55, 105);
             this.buttonORE.TabIndex = 19;
@@ -299,10 +313,11 @@
             // 
             // buttonOW
             // 
+            this.buttonOW.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonOW.BackColor = System.Drawing.SystemColors.Control;
             this.buttonOW.Image = global::TunicKeyboard.Properties.Resources.OW;
             this.buttonOW.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonOW.Location = new System.Drawing.Point(73, 554);
+            this.buttonOW.Location = new System.Drawing.Point(73, 471);
             this.buttonOW.Name = "buttonOW";
             this.buttonOW.Size = new System.Drawing.Size(55, 105);
             this.buttonOW.TabIndex = 18;
@@ -313,10 +328,11 @@
             // 
             // buttonOU
             // 
+            this.buttonOU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonOU.BackColor = System.Drawing.SystemColors.Control;
             this.buttonOU.Image = global::TunicKeyboard.Properties.Resources.OU;
             this.buttonOU.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonOU.Location = new System.Drawing.Point(12, 554);
+            this.buttonOU.Location = new System.Drawing.Point(12, 471);
             this.buttonOU.Name = "buttonOU";
             this.buttonOU.Size = new System.Drawing.Size(55, 105);
             this.buttonOU.TabIndex = 17;
@@ -327,10 +343,11 @@
             // 
             // buttonOO
             // 
+            this.buttonOO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonOO.BackColor = System.Drawing.SystemColors.Control;
             this.buttonOO.Image = global::TunicKeyboard.Properties.Resources.OO;
             this.buttonOO.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonOO.Location = new System.Drawing.Point(256, 443);
+            this.buttonOO.Location = new System.Drawing.Point(256, 360);
             this.buttonOO.Name = "buttonOO";
             this.buttonOO.Size = new System.Drawing.Size(55, 105);
             this.buttonOO.TabIndex = 16;
@@ -341,10 +358,11 @@
             // 
             // buttonOI
             // 
+            this.buttonOI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonOI.BackColor = System.Drawing.SystemColors.Control;
             this.buttonOI.Image = global::TunicKeyboard.Properties.Resources.OI;
             this.buttonOI.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonOI.Location = new System.Drawing.Point(195, 443);
+            this.buttonOI.Location = new System.Drawing.Point(195, 360);
             this.buttonOI.Name = "buttonOI";
             this.buttonOI.Size = new System.Drawing.Size(55, 105);
             this.buttonOI.TabIndex = 15;
@@ -355,10 +373,11 @@
             // 
             // buttonOH
             // 
+            this.buttonOH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonOH.BackColor = System.Drawing.SystemColors.Control;
             this.buttonOH.Image = global::TunicKeyboard.Properties.Resources.OH;
             this.buttonOH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonOH.Location = new System.Drawing.Point(134, 443);
+            this.buttonOH.Location = new System.Drawing.Point(134, 360);
             this.buttonOH.Name = "buttonOH";
             this.buttonOH.Size = new System.Drawing.Size(55, 105);
             this.buttonOH.TabIndex = 14;
@@ -369,10 +388,11 @@
             // 
             // buttonIR
             // 
+            this.buttonIR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonIR.BackColor = System.Drawing.SystemColors.Control;
             this.buttonIR.Image = global::TunicKeyboard.Properties.Resources.IR;
             this.buttonIR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonIR.Location = new System.Drawing.Point(73, 443);
+            this.buttonIR.Location = new System.Drawing.Point(73, 360);
             this.buttonIR.Name = "buttonIR";
             this.buttonIR.Size = new System.Drawing.Size(55, 105);
             this.buttonIR.TabIndex = 13;
@@ -383,10 +403,11 @@
             // 
             // buttonIE
             // 
+            this.buttonIE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonIE.BackColor = System.Drawing.SystemColors.Control;
             this.buttonIE.Image = global::TunicKeyboard.Properties.Resources.IE;
             this.buttonIE.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonIE.Location = new System.Drawing.Point(12, 443);
+            this.buttonIE.Location = new System.Drawing.Point(12, 360);
             this.buttonIE.Name = "buttonIE";
             this.buttonIE.Size = new System.Drawing.Size(55, 105);
             this.buttonIE.TabIndex = 12;
@@ -397,10 +418,11 @@
             // 
             // buttonZ
             // 
+            this.buttonZ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonZ.BackColor = System.Drawing.SystemColors.Control;
             this.buttonZ.Image = global::TunicKeyboard.Properties.Resources.Z;
             this.buttonZ.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonZ.Location = new System.Drawing.Point(686, 554);
+            this.buttonZ.Location = new System.Drawing.Point(686, 471);
             this.buttonZ.Name = "buttonZ";
             this.buttonZ.Size = new System.Drawing.Size(55, 105);
             this.buttonZ.TabIndex = 44;
@@ -411,10 +433,11 @@
             // 
             // buttonY
             // 
+            this.buttonY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonY.BackColor = System.Drawing.SystemColors.Control;
             this.buttonY.Image = global::TunicKeyboard.Properties.Resources.Y;
             this.buttonY.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonY.Location = new System.Drawing.Point(625, 554);
+            this.buttonY.Location = new System.Drawing.Point(625, 471);
             this.buttonY.Name = "buttonY";
             this.buttonY.Size = new System.Drawing.Size(55, 105);
             this.buttonY.TabIndex = 43;
@@ -425,10 +448,11 @@
             // 
             // buttonW
             // 
+            this.buttonW.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonW.BackColor = System.Drawing.SystemColors.Control;
             this.buttonW.Image = global::TunicKeyboard.Properties.Resources.W;
             this.buttonW.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonW.Location = new System.Drawing.Point(564, 554);
+            this.buttonW.Location = new System.Drawing.Point(564, 471);
             this.buttonW.Name = "buttonW";
             this.buttonW.Size = new System.Drawing.Size(55, 105);
             this.buttonW.TabIndex = 42;
@@ -439,10 +463,11 @@
             // 
             // buttonV
             // 
+            this.buttonV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonV.BackColor = System.Drawing.SystemColors.Control;
             this.buttonV.Image = global::TunicKeyboard.Properties.Resources.V;
             this.buttonV.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonV.Location = new System.Drawing.Point(503, 554);
+            this.buttonV.Location = new System.Drawing.Point(503, 471);
             this.buttonV.Name = "buttonV";
             this.buttonV.Size = new System.Drawing.Size(55, 105);
             this.buttonV.TabIndex = 41;
@@ -453,10 +478,11 @@
             // 
             // buttonDTH
             // 
+            this.buttonDTH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonDTH.BackColor = System.Drawing.SystemColors.Control;
             this.buttonDTH.Image = global::TunicKeyboard.Properties.Resources.DTH;
             this.buttonDTH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonDTH.Location = new System.Drawing.Point(442, 554);
+            this.buttonDTH.Location = new System.Drawing.Point(442, 471);
             this.buttonDTH.Name = "buttonDTH";
             this.buttonDTH.Size = new System.Drawing.Size(55, 105);
             this.buttonDTH.TabIndex = 40;
@@ -467,10 +493,11 @@
             // 
             // buttonT
             // 
+            this.buttonT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonT.BackColor = System.Drawing.SystemColors.Control;
             this.buttonT.Image = global::TunicKeyboard.Properties.Resources.T;
             this.buttonT.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonT.Location = new System.Drawing.Point(686, 443);
+            this.buttonT.Location = new System.Drawing.Point(686, 360);
             this.buttonT.Name = "buttonT";
             this.buttonT.Size = new System.Drawing.Size(55, 105);
             this.buttonT.TabIndex = 38;
@@ -481,10 +508,11 @@
             // 
             // buttonSH
             // 
+            this.buttonSH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonSH.BackColor = System.Drawing.SystemColors.Control;
             this.buttonSH.Image = global::TunicKeyboard.Properties.Resources.SH;
             this.buttonSH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonSH.Location = new System.Drawing.Point(625, 443);
+            this.buttonSH.Location = new System.Drawing.Point(625, 360);
             this.buttonSH.Name = "buttonSH";
             this.buttonSH.Size = new System.Drawing.Size(55, 105);
             this.buttonSH.TabIndex = 37;
@@ -495,10 +523,11 @@
             // 
             // buttonS
             // 
+            this.buttonS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonS.BackColor = System.Drawing.SystemColors.Control;
             this.buttonS.Image = global::TunicKeyboard.Properties.Resources.S;
             this.buttonS.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonS.Location = new System.Drawing.Point(564, 443);
+            this.buttonS.Location = new System.Drawing.Point(564, 360);
             this.buttonS.Name = "buttonS";
             this.buttonS.Size = new System.Drawing.Size(55, 105);
             this.buttonS.TabIndex = 36;
@@ -509,10 +538,11 @@
             // 
             // buttonR
             // 
+            this.buttonR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonR.BackColor = System.Drawing.SystemColors.Control;
             this.buttonR.Image = global::TunicKeyboard.Properties.Resources.R;
             this.buttonR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonR.Location = new System.Drawing.Point(503, 443);
+            this.buttonR.Location = new System.Drawing.Point(503, 360);
             this.buttonR.Name = "buttonR";
             this.buttonR.Size = new System.Drawing.Size(55, 105);
             this.buttonR.TabIndex = 35;
@@ -523,10 +553,11 @@
             // 
             // buttonP
             // 
+            this.buttonP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonP.BackColor = System.Drawing.SystemColors.Control;
             this.buttonP.Image = global::TunicKeyboard.Properties.Resources.P;
             this.buttonP.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonP.Location = new System.Drawing.Point(442, 443);
+            this.buttonP.Location = new System.Drawing.Point(442, 360);
             this.buttonP.Name = "buttonP";
             this.buttonP.Size = new System.Drawing.Size(55, 105);
             this.buttonP.TabIndex = 34;
@@ -537,10 +568,11 @@
             // 
             // buttonN
             // 
+            this.buttonN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonN.BackColor = System.Drawing.SystemColors.Control;
             this.buttonN.Image = global::TunicKeyboard.Properties.Resources.N;
             this.buttonN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonN.Location = new System.Drawing.Point(686, 332);
+            this.buttonN.Location = new System.Drawing.Point(686, 249);
             this.buttonN.Name = "buttonN";
             this.buttonN.Size = new System.Drawing.Size(55, 105);
             this.buttonN.TabIndex = 32;
@@ -551,10 +583,11 @@
             // 
             // buttonM
             // 
+            this.buttonM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonM.BackColor = System.Drawing.SystemColors.Control;
             this.buttonM.Image = global::TunicKeyboard.Properties.Resources.M;
             this.buttonM.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonM.Location = new System.Drawing.Point(625, 332);
+            this.buttonM.Location = new System.Drawing.Point(625, 249);
             this.buttonM.Name = "buttonM";
             this.buttonM.Size = new System.Drawing.Size(55, 105);
             this.buttonM.TabIndex = 31;
@@ -565,10 +598,11 @@
             // 
             // buttonL
             // 
+            this.buttonL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonL.BackColor = System.Drawing.SystemColors.Control;
             this.buttonL.Image = global::TunicKeyboard.Properties.Resources.L;
             this.buttonL.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonL.Location = new System.Drawing.Point(564, 332);
+            this.buttonL.Location = new System.Drawing.Point(564, 249);
             this.buttonL.Name = "buttonL";
             this.buttonL.Size = new System.Drawing.Size(55, 105);
             this.buttonL.TabIndex = 30;
@@ -579,10 +613,11 @@
             // 
             // buttonK
             // 
+            this.buttonK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonK.BackColor = System.Drawing.SystemColors.Control;
             this.buttonK.Image = global::TunicKeyboard.Properties.Resources.K;
             this.buttonK.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonK.Location = new System.Drawing.Point(503, 332);
+            this.buttonK.Location = new System.Drawing.Point(503, 249);
             this.buttonK.Name = "buttonK";
             this.buttonK.Size = new System.Drawing.Size(55, 105);
             this.buttonK.TabIndex = 29;
@@ -593,10 +628,11 @@
             // 
             // buttonJ
             // 
+            this.buttonJ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonJ.BackColor = System.Drawing.SystemColors.Control;
             this.buttonJ.Image = global::TunicKeyboard.Properties.Resources.J;
             this.buttonJ.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonJ.Location = new System.Drawing.Point(442, 332);
+            this.buttonJ.Location = new System.Drawing.Point(442, 249);
             this.buttonJ.Name = "buttonJ";
             this.buttonJ.Size = new System.Drawing.Size(55, 105);
             this.buttonJ.TabIndex = 28;
@@ -607,10 +643,11 @@
             // 
             // buttonG
             // 
+            this.buttonG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonG.BackColor = System.Drawing.SystemColors.Control;
             this.buttonG.Image = global::TunicKeyboard.Properties.Resources.G;
             this.buttonG.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonG.Location = new System.Drawing.Point(686, 221);
+            this.buttonG.Location = new System.Drawing.Point(686, 138);
             this.buttonG.Name = "buttonG";
             this.buttonG.Size = new System.Drawing.Size(55, 105);
             this.buttonG.TabIndex = 26;
@@ -621,10 +658,11 @@
             // 
             // buttonF
             // 
+            this.buttonF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonF.BackColor = System.Drawing.SystemColors.Control;
             this.buttonF.Image = global::TunicKeyboard.Properties.Resources.F;
             this.buttonF.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonF.Location = new System.Drawing.Point(625, 221);
+            this.buttonF.Location = new System.Drawing.Point(625, 138);
             this.buttonF.Name = "buttonF";
             this.buttonF.Size = new System.Drawing.Size(55, 105);
             this.buttonF.TabIndex = 25;
@@ -635,10 +673,11 @@
             // 
             // buttonD
             // 
+            this.buttonD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonD.BackColor = System.Drawing.SystemColors.Control;
             this.buttonD.Image = global::TunicKeyboard.Properties.Resources.D;
             this.buttonD.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonD.Location = new System.Drawing.Point(564, 221);
+            this.buttonD.Location = new System.Drawing.Point(564, 138);
             this.buttonD.Name = "buttonD";
             this.buttonD.Size = new System.Drawing.Size(55, 105);
             this.buttonD.TabIndex = 24;
@@ -649,10 +688,11 @@
             // 
             // buttonCH
             // 
+            this.buttonCH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonCH.BackColor = System.Drawing.SystemColors.Control;
             this.buttonCH.Image = global::TunicKeyboard.Properties.Resources.CH;
             this.buttonCH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonCH.Location = new System.Drawing.Point(503, 221);
+            this.buttonCH.Location = new System.Drawing.Point(503, 138);
             this.buttonCH.Name = "buttonCH";
             this.buttonCH.Size = new System.Drawing.Size(55, 105);
             this.buttonCH.TabIndex = 23;
@@ -663,10 +703,11 @@
             // 
             // buttonB
             // 
+            this.buttonB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonB.BackColor = System.Drawing.SystemColors.Control;
             this.buttonB.Image = global::TunicKeyboard.Properties.Resources.B;
             this.buttonB.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonB.Location = new System.Drawing.Point(442, 221);
+            this.buttonB.Location = new System.Drawing.Point(442, 138);
             this.buttonB.Name = "buttonB";
             this.buttonB.Size = new System.Drawing.Size(55, 105);
             this.buttonB.TabIndex = 22;
@@ -677,10 +718,11 @@
             // 
             // buttonZH
             // 
+            this.buttonZH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonZH.BackColor = System.Drawing.SystemColors.Control;
             this.buttonZH.Image = global::TunicKeyboard.Properties.Resources.ZH;
             this.buttonZH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonZH.Location = new System.Drawing.Point(747, 554);
+            this.buttonZH.Location = new System.Drawing.Point(747, 471);
             this.buttonZH.Name = "buttonZH";
             this.buttonZH.Size = new System.Drawing.Size(55, 105);
             this.buttonZH.TabIndex = 45;
@@ -691,10 +733,11 @@
             // 
             // buttonTH
             // 
+            this.buttonTH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonTH.BackColor = System.Drawing.SystemColors.Control;
             this.buttonTH.Image = global::TunicKeyboard.Properties.Resources.TH;
             this.buttonTH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonTH.Location = new System.Drawing.Point(747, 443);
+            this.buttonTH.Location = new System.Drawing.Point(747, 360);
             this.buttonTH.Name = "buttonTH";
             this.buttonTH.Size = new System.Drawing.Size(55, 105);
             this.buttonTH.TabIndex = 39;
@@ -705,10 +748,11 @@
             // 
             // buttonNG
             // 
+            this.buttonNG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonNG.BackColor = System.Drawing.SystemColors.Control;
             this.buttonNG.Image = global::TunicKeyboard.Properties.Resources.NG;
             this.buttonNG.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonNG.Location = new System.Drawing.Point(747, 332);
+            this.buttonNG.Location = new System.Drawing.Point(747, 249);
             this.buttonNG.Name = "buttonNG";
             this.buttonNG.Size = new System.Drawing.Size(55, 105);
             this.buttonNG.TabIndex = 33;
@@ -719,10 +763,11 @@
             // 
             // buttonH
             // 
+            this.buttonH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonH.BackColor = System.Drawing.SystemColors.Control;
             this.buttonH.Image = global::TunicKeyboard.Properties.Resources.H;
             this.buttonH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonH.Location = new System.Drawing.Point(747, 221);
+            this.buttonH.Location = new System.Drawing.Point(747, 138);
             this.buttonH.Name = "buttonH";
             this.buttonH.Size = new System.Drawing.Size(55, 105);
             this.buttonH.TabIndex = 27;
@@ -731,22 +776,24 @@
             this.buttonH.UseVisualStyleBackColor = false;
             this.buttonH.Click += new System.EventHandler(this.buttonH_Click);
             // 
-            // buttonNEXT
+            // buttonAPPLY
             // 
-            this.buttonNEXT.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonNEXT.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonNEXT.Location = new System.Drawing.Point(349, 332);
-            this.buttonNEXT.Name = "buttonNEXT";
-            this.buttonNEXT.Size = new System.Drawing.Size(55, 105);
-            this.buttonNEXT.TabIndex = 46;
-            this.buttonNEXT.Text = "APPLY";
-            this.buttonNEXT.UseVisualStyleBackColor = false;
-            this.buttonNEXT.Click += new System.EventHandler(this.buttonNEXT_Click);
+            this.buttonAPPLY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonAPPLY.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonAPPLY.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonAPPLY.Location = new System.Drawing.Point(349, 249);
+            this.buttonAPPLY.Name = "buttonAPPLY";
+            this.buttonAPPLY.Size = new System.Drawing.Size(55, 105);
+            this.buttonAPPLY.TabIndex = 46;
+            this.buttonAPPLY.Text = "APPLY";
+            this.buttonAPPLY.UseVisualStyleBackColor = false;
+            this.buttonAPPLY.Click += new System.EventHandler(this.buttonAPPLY_Click);
             // 
             // pictureBoxPreview
             // 
+            this.pictureBoxPreview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBoxPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxPreview.Location = new System.Drawing.Point(359, 234);
+            this.pictureBoxPreview.Location = new System.Drawing.Point(359, 151);
             this.pictureBoxPreview.Name = "pictureBoxPreview";
             this.pictureBoxPreview.Size = new System.Drawing.Size(35, 79);
             this.pictureBoxPreview.TabIndex = 47;
@@ -757,9 +804,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(814, 669);
+            this.ClientSize = new System.Drawing.Size(814, 586);
             this.Controls.Add(this.pictureBoxPreview);
-            this.Controls.Add(this.buttonNEXT);
+            this.Controls.Add(this.buttonAPPLY);
             this.Controls.Add(this.buttonZH);
             this.Controls.Add(this.buttonTH);
             this.Controls.Add(this.buttonNG);
@@ -807,6 +854,8 @@
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.textBoxMain);
             this.Controls.Add(this.pictureBoxMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -867,7 +916,7 @@
         private Button buttonTH;
         private Button buttonNG;
         private Button buttonH;
-        private Button buttonNEXT;
+        private Button buttonAPPLY;
         private PictureBox pictureBoxPreview;
     }
 }
