@@ -370,11 +370,11 @@ public partial class FormMain : Form
     {
         using Graphics g = Graphics.FromImage(previewBuffer);
         g.Clear(Color.Transparent);
-        if (vowelButton != null)
+        if (vowelButton?.Image != null)
             g.DrawImage(vowelButton.Image, 0, 0);
-        if (consonantButton != null)
+        if (consonantButton?.Image != null)
             g.DrawImage(consonantButton.Image, 0, 0);
-        if (dotButton != null)
+        if (dotButton?.Image != null)
             g.DrawImage(dotButton.Image, 0, 0);
         pictureBoxPreview.Invalidate();
     }
